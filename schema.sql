@@ -4,7 +4,7 @@
 CREATE DATABASE vet_clinic;
 
 CREATE TABLE animals (
-    id INT PRIMARY KEY NOT NULL
+    id INT PRIMARY KEY NOT NULL,
     name text,
     date_of_birth DATE,
     escape_attempts INT,
