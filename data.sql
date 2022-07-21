@@ -33,6 +33,12 @@ UPDATE animals SET owner_id = 5 WHERE name = 'Angemon' OR name = 'Boarmon';
 
 INSERT INTO vets (name, age, date_of_graduation)
 VALUES ('William Tatcher', 45, 'Apr 23, 2000'),
- ('Maisy Smith', 26, 'Jan 17, 2019'),
- ('Stephanie Mendez', 64, 'May 04, 1981'),
- ('Vet Jack Harkness', 38, 'Jun 08, 2008');
+('Maisy Smith', 26, 'Jan 17, 2019'),
+('Stephanie Mendez', 64, 'May 04, 1981'),
+('Vet Jack Harkness', 38, 'Jun 08, 2008');
+
+INSERT INTO specializations (vets_id, species_id)
+VALUES (1, 1),
+(3, 1),
+(3, 2),
+(4, 2);
