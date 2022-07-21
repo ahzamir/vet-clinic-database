@@ -28,3 +28,10 @@ ALTER TABLE animals ADD species_id INT,
 ALTER TABLE animals ADD FOREIGN KEY (species_id) REFERENCES species(id);
 ALTER TABLE animals ADD owner_id INT;
 ALTER TABLE animals ADD FOREIGN KEY (owner_id) REFERENCES owners(id);
+
+INSERT INTO owners(full_name, age) VALUES ('Sam Smith', 34);
+INSERT INTO owners(full_name, age) VALUES ('Jennifer Orwell', 19);
+INSERT INTO owners(full_name, age) VALUES ('Bob', 45);
+INSERT INTO owners(full_name, age) VALUES ('Melody Pond', 77);
+INSERT INTO owners(full_name, age) VALUES ('Den Winchester', 14);
+INSERT INTO owners(full_name, age) VALUES ('Jodie Whittaker', 38);
