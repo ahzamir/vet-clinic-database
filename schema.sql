@@ -1,6 +1,5 @@
 /* Database schema to keep the structure of entire database. */
 
-/* I have Created the Database here. */
 CREATE DATABASE vet_clinic;
 ALTER TABLE animals ADD species TEXT;
 
@@ -23,3 +22,5 @@ CREATE TABLE species (
     id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
     name TEXT NOT NULL
 );
+
+ALTER TABLE animals DROP COLUMN species;
