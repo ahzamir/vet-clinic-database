@@ -23,6 +23,13 @@ CREATE TABLE species (
     name TEXT NOT NULL
 );
 
+CREATE TABLE vets (
+    id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    name TEXT NOT NULL,
+    age INT,
+    date_of_graduation DATE
+);
+
 ALTER TABLE animals DROP COLUMN species;
 ALTER TABLE animals ADD species_id INT,
 ALTER TABLE animals ADD FOREIGN KEY (species_id) REFERENCES species(id);
