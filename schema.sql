@@ -30,6 +30,12 @@ CREATE TABLE vets (
     date_of_graduation DATE
 );
 
+CREATE TABLE specializations (
+    species_id INT,
+    vets_id INT,
+    PRIMARY KEY (species_id, vets_id)
+);
+
 ALTER TABLE animals DROP COLUMN species;
 ALTER TABLE animals ADD species_id INT,
 ALTER TABLE animals ADD FOREIGN KEY (species_id) REFERENCES species(id);
