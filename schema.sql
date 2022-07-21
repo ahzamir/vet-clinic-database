@@ -36,6 +36,13 @@ CREATE TABLE specializations (
     PRIMARY KEY (species_id, vets_id)
 );
 
+CREATE TABLE visits (
+    animals_id INT,
+    vets_id INT,
+    date DATE,
+    PRIMARY KEY (animals_id, vets_id, date)
+);
+
 ALTER TABLE animals DROP COLUMN species;
 ALTER TABLE animals ADD species_id INT,
 ALTER TABLE animals ADD FOREIGN KEY (species_id) REFERENCES species(id);
