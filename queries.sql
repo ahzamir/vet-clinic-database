@@ -22,3 +22,6 @@ SELECT COUNT(*), species.name FROM animals JOIN species ON species_id = species.
 SELECT animals.name FROM animals JOIN species ON species_id = species.id JOIN owners ON owner_id = owners.id WHERE species_id = 2;
 SELECT animals.name FROM animals JOIN owners ON owner_id = owners.id WHERE owners.id = 5 AND escape_attempts = 0;
 SELECT COUNT(*) as total, owners.id, owners.full_name FROM animals RIGHT JOIN owners ON owners.id = owner_id GROUP BY owners.id ORDER BY total DESC LIMIT 1;
+SELECT animals.name FROM animals JOIN visits ON animals_id = animals.id WHERE vets_id = 1 ORDER BY visits.date LIMIT 1;
+SELECT COUNT(animals.name) FROM animals JOIN visits ON animals_id = animals.id WHERE vets_id = 3;
+SELECT vets.name, species.name FROM species RIGHT JOIN specializations ON species.id = specializations.species_id RIGHT JOIN vets ON vets.id = specializations.vets_id;
