@@ -23,6 +23,7 @@ SELECT animals.name FROM animals JOIN species ON species_id = species.id JOIN ow
 SELECT animals.name FROM animals JOIN owners ON owner_id = owners.id WHERE owners.id = 5 AND escape_attempts = 0;
 SELECT COUNT(*) as total, owners.id, owners.full_name FROM animals RIGHT JOIN owners ON owners.id = owner_id GROUP BY owners.id ORDER BY total DESC LIMIT 1;
 SELECT animals.name FROM animals JOIN visits ON animals_id = animals.id WHERE vets_id = 1 ORDER BY visits.date LIMIT 1;
+SELECT count(*) AS total_animals, vets.name FROM visits INNER JOIN animals ON visits.animals_id = animals.id INNER JOIN vets ON visits.vets_id = vets.id WHERE vets.name = 'Stephanie Mendez' GROUP BY vets.name;
 SELECT COUNT(animals.name) FROM animals JOIN visits ON animals_id = animals.id WHERE vets_id = 3;
 SELECT vets.name, species.name FROM species RIGHT JOIN specializations ON species.id = specializations.species_id RIGHT JOIN vets ON vets.id = specializations.vets_id;
 SELECT animals.name FROM animals JOIN visits ON animals.id = visits.animals_id JOIN vets ON vets.id = vets_id WHERE vets.id = 3 AND visits.date BETWEEN '2020-04-01' AND '2020-08-30';
