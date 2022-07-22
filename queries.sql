@@ -28,3 +28,4 @@ SELECT vets.name, species.name FROM species RIGHT JOIN specializations ON specie
 SELECT animals.name FROM animals JOIN visits ON animals.id = visits.animals_id JOIN vets ON vets.id = vets_id WHERE vets.id = 3 AND visits.date BETWEEN '2020-04-01' AND '2020-08-30';
 SELECT COUNT(animals.name) AS total, animals.name FROM animals JOIN visits ON animals.id = visits.animals_id JOIN vets ON vets.id = visits.vets_id GROUP BY animals.name ORDER BY total DESC LIMIT 1;
 SELECT animals.name, date FROM animals JOIN visits ON animals.id = visits.animals_id JOIN vets ON vets.id = visits.vets_id WHERE vets.id = 2 ORDER BY date LIMIT 1;
+SELECT animals.id, animals.name, animals.date_of_birth, animals.escape_attempts, animals.weight_kg, vets.name, vets.age, vets.date_of_graduation, date FROM visits JOIN animals ON animals.id = visits.animals_id JOIN vets ON vets.id = visits.vets_id ORDER BY date LIMIT 1;
