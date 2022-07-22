@@ -48,3 +48,4 @@ ALTER TABLE animals ADD species_id INT,
 ALTER TABLE animals ADD FOREIGN KEY (species_id) REFERENCES species(id);
 ALTER TABLE animals ADD owner_id INT;
 ALTER TABLE animals ADD FOREIGN KEY (owner_id) REFERENCES owners(id);
+ALTER TABLE vets ALTER COLUMN name TYPE VARCHAR(250);
