@@ -36,6 +36,7 @@ VALUES ('William Tatcher', 45, 'Apr 23, 2000'),
 ('Maisy Smith', 26, 'Jan 17, 2019'),
 ('Stephanie Mendez', 64, 'May 04, 1981'),
 ('Vet Jack Harkness', 38, 'Jun 08, 2008');
+UPDATE vets SET date_of_graduation = 'May 17, 1981' WHERE name = 'Stephanie Mendez';
 
 INSERT INTO specializations (vets_id, species_id)
 VALUES (1, 1),
