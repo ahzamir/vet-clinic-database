@@ -22,6 +22,11 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - Twitter: [@YousufiZamir](https://twitter.com/YousufiZamir)
 - LinkedIn: [ahmad-zamir-yousufi](https://www.linkedin.com/in/ahzamir/)
 
+👤 **Happen S Mathebula**
+
+- GitHub: [@HSMathebula](https://hsmathebula.github.io/Happen_S_Mathebula/)
+- Twitter: [@HappenSipho](https://twitter.com/HappenSipho)
+- LinkedIn: [happen-sipho-mathebula](www.linkedin.com/in/happen-sipho-mathebula)
 
 ## 🤝 Contributing
 
