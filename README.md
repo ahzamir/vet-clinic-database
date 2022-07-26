@@ -28,6 +28,12 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - Twitter: [@HappenSipho](https://twitter.com/HappenSipho)
 - LinkedIn: [happen-sipho-mathebula](www.linkedin.com/in/happen-sipho-mathebula)
 
+👤 **Huseyin Biyik**
+
+- GitHub: [@huseyinbiyik](https://github.com/huseyinbiyik)
+- Twitter: [@huseyin__biyik](https://twitter.com/huseyin__biyik)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/huseyin-b%C4%B1y%C4%B1k/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
